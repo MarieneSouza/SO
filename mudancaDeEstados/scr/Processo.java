@@ -27,19 +27,19 @@ public class Processo {
             Random rand = new Random();
             int quantum = 1000;
 
-            // Executando o processo enquanto o contador de programa não atingir o tempo total
+           
             while (CP < TP) {
-                // Executando o processo por até o quantum de ciclos
+               
                 for (int i = 0; i < quantum && CP < TP; i++) {
                     CP++;
                     N_CPU++;
-                    if (rand.nextDouble() < 0.01) { // 1% de chance de realizar operação de E/S
+                    if (rand.nextDouble() < 0.01) { 
                         bloquear(writer);
                         break;
                     }
                 }
 
-                // Se o processo não terminou, trocou de contexto e voltou para "Pronto"
+             
                 if (CP < TP) {
                     trocarContexto("Pronto", writer);
                 } else {
@@ -54,7 +54,7 @@ public class Processo {
     private void bloquear(PrintWriter writer) {
         NES++;
         Random rand = new Random();
-        if (rand.nextDouble() < 0.3) { // 30% de chance de sair de Bloqueado para Pronto
+        if (rand.nextDouble() < 0.3) {
             trocarContexto("Pronto", writer);
         } else {
             trocarContexto("Bloqueado", writer);
@@ -67,7 +67,7 @@ public class Processo {
     }
 
     private void terminar(PrintWriter writer) {
-        EP = "Terminado"; // Garantindo que o estado final seja "Terminado"
+        EP = "Terminado"; 
         writer.println("Processo " + PID + " terminou.");
         writer.println("Dados do Processo " + PID + ":");
         writer.println("Tempo de Processamento: " + TP);
