@@ -1,6 +1,6 @@
 
 ## Projeto criado para a materia de SO 
-Demonstração de Mudanças de Estados de Processo em Sistemas Operacionais - 
+Demonstração de Mudanças de Estados de Processos em Sistemas Operacionais - 
 
 ## Estrutura de pastas
 O espaço de trabalho contém duas pastas por padrão, onde:
