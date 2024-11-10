@@ -2,7 +2,7 @@
 public class App {
 
     public static void main(String[] args) {
-        // Criando e inicializando os processos
+       
         Processo[] processos = new Processo[10];
         processos[0] = new Processo(0, 10000);
         processos[1] = new Processo(1, 5000);
@@ -15,7 +15,7 @@ public class App {
         processos[8] = new Processo(8, 4000);
         processos[9] = new Processo(9, 10000);
 
-        // Executando os processos em ordem de PID
+      
         for (Processo p : processos) {
             p.executar();
         }
