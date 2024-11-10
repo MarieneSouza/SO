@@ -12,5 +12,5 @@ Enquanto isso, os arquivos de saída compilados serão gerados na pasta por padr
 Se você deseja personalizar a estrutura de pastas, abra e atualize as configurações relacionadas `.vscode/settings.json`
 
 ## Gerenciamento de dependências
-A visualização `JAVA PROJECTS` permite gerenciar suas dependências. Mais detalhes podem ser encontrados [aqui](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+A visualização  `JAVA PROJECTS`  permite gerenciar suas dependências. Mais detalhes podem ser encontrados [aqui](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
   
